@@ -1,0 +1,247 @@
+//base 
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/utilities';
+
+//components
+@import "components/navbar";
+@import "components/footer";
+
+//layout 
+@import "layout/index";
+@import "layout/contacto";
+@import "layout/productos";
+@import "layout/mediaqueries";
+
+
+
+
+* {
+  font-family: 'Archivo', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*display: flex;*/
+}
+
+
+/*
+    main {
+      flex: 1;
+      padding: 0px;
+      text-align: center;
+    }
+    
+    
+    section {
+      padding: 20px;
+    }
+    
+    h2 {
+      color: #433520;
+    }
+     
+    p {
+      color: #025955;
+      font-size: 1.1em;
+    }
+    
+    .prompt-btn {
+      background-color: #00917C;
+      color: #FDE8CD;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .prompt-btn:hover {
+      background-color: #025955;
+    }
+  
+    .img-logo {
+      width: 250px;
+    }
+  
+    .img-logo:hover {
+      transform: scale(1.1);
+      transition: .2s;
+      cursor: pointer;
+    }
+  
+    main header {
+      background-image:linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.315)),    url(img/cafe-wallpaper-2.jpg);
+      
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-attachment: fixed;
+      background-position-y: -250px;
+    }
+    
+  
+    .footer-cofi {
+      width: 100%;
+      height: 150px;
+      background-color: #00917C;
+    } */
+
+
+/*
+    #slider-container {
+      position: relative;
+      top: -20px;
+      overflow: hidden;
+    }
+    
+    #slider {
+      display: flex;
+      animation: slide 10s infinite; /* Ajusta la duración según tus preferencias *
+      
+  }
+    
+    #slider img {
+      width: 100%;
+      height: auto;
+    }
+    
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  
+      100% {
+          transform: translateX(0);
+        }
+        75% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        25% {
+          transform: translateX(-300%);
+        }
+        0% {
+          transform: translateX(0);
+        }
+    } */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $cofiFirstColor;
+}
+
+.contenedorDeCarta {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 15px;
+  background-color: #e5ff50;
+}
+
+.card-body p {
+  font-weight: bold;
+}
+
+.botonCarta {
+  width: 70%;
+}
+
+.nuestrasVariedades {
+  font-weight: bold;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer {
+  background-color: $cofiFirstColor;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  background-image: url(../img/barista-wallpaper.jpg);
+  background-size: 100%;
+  background-position-y: -500PX;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contactoSection p {
+  color: #ffffff !important;
+}
+
+.footer-section {
+  margin: 10px;
+  
+}
+
+.footer-section h4 {
+  color: $cofiFirstColor;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-section p {
+  color: black;
+  text-shadow: 2px 1px 5px #ffffff;
+  
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-section form input[type="email"] {
+  padding: 5px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer-section form button {
+  padding: 5px 10px;
+  background-color: #F39C12;
+  color: $cofiFirstColor;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #7F8C8D;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  color: #BDC3C7;
+}
