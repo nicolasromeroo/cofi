@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function mostrarCarta() {
   Swal.fire({
-    imageUrl: "../img/carta1Cofi.png",
+    imageUrl: "img/carta1Cofi.png",
     imageHeight: 700,
     imageWidth: 500,
     imageAlt: "A tall image"
