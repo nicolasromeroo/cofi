@@ -1,178 +1,73 @@
 @charset "UTF-8";
+
+/* BUTTONS
+.btn-primary, .btn-danger, .btn-warning, .btn-dark, .btn-light, .btn-success, .btn-info {
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.btn-primary { background-color: #0f0f80; }
+.btn-primary:hover { background-color: #0a0a52; box-shadow: 1px 1px 6px #3f3fe9; border: 1px solid #3f3fe9; font-size: 28px; }
+
+.btn-danger { background-color: #6b1313; }
+.btn-danger:hover { background-color: #400b0b; box-shadow: 1px 1px 6px #dc3b3b; border: 1px solid #dc3b3b; font-size: 28px; }
+
+.btn-warning { background-color: #946712; }
+.btn-warning:hover { background-color: #67470c; box-shadow: 1px 1px 6px #eab755; border: 1px solid #eab755; font-size: 28px; }
+
+.btn-dark { background-color: #000000; }
+.btn-dark:hover { background-color: #1a1a1a; box-shadow: 1px 1px 6px #4d4d4d; border: 1px solid #4d4d4d; font-size: 28px; }
+
+.btn-light { background-color: #ffffff; color: #000000; }
+.btn-light:hover { background-color: gray; border: 1px solid white; color: #ffffff; box-shadow: 1px 1px 6px white; font-size: 28px; }
+
+.btn-success { background-color: #0f520f; }
+.btn-success:hover { background-color: #072707; box-shadow: 1px 1px 6px #27d327; border: 1px solid #27d327; font-size: 28px; }
+
+.btn-info { background-color: #868686; }
+.btn-info:hover { background-color: #6d6d6d; box-shadow: 1px 1px 6px lightgray; border: 1px solid lightgray; font-size: 28px; } */
+
 /* RESET */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* EN UTILITIES -> bucles, mixin. IF NO, ya queson condicionales solo para una clase */
-.btn-primary {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #0f0f80;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #ffffff;
-}
-.btn-primary:hover {
-  background-color: #0a0a52;
-  box-shadow: 1px 1px 6px #3f3fe9;
-  border: 1px solid #3f3fe9;
-  font-size: 28px;
-}
-
-.btn-danger {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #6b1313;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #ffffff;
-}
-.btn-danger:hover {
-  background-color: #400b0b;
-  box-shadow: 1px 1px 6px #dc3b3b;
-  border: 1px solid #dc3b3b;
-  font-size: 28px;
-}
-
-.btn-warning {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #946712;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #ffffff;
-}
-.btn-warning:hover {
-  background-color: #67470c;
-  box-shadow: 1px 1px 6px #eab755;
-  border: 1px solid #eab755;
-  font-size: 28px;
-}
-
-.btn-dark {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #000000;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #ffffff;
-  /* RESTO DE LOS BOTONES */
-}
-.btn-dark:hover {
-  background-color: #1a1a1a;
-  box-shadow: 1px 1px 6px #4d4d4d;
-  border: 1px solid #4d4d4d;
-  font-size: 28px;
-}
-
-.btn-light {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #ffffff;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #000000;
-  /* BOTON OSCURO */
-}
-.btn-light:hover {
-  background-color: gray;
-  border: 1px solid white;
-  color: #ffffff;
-  box-shadow: 1px 1px 6px white;
-  font-size: 28px;
-}
-
-.btn-success {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #0f520f;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #ffffff;
-}
-.btn-success:hover {
-  background-color: #072707;
-  box-shadow: 1px 1px 6px #27d327;
-  border: 1px solid #27d327;
-  font-size: 28px;
-}
-
-.btn-info {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #868686;
-  outline: none;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  font-size: 25px;
-  /* BOTON CLARO */
-  color: #ffffff;
-}
-.btn-info:hover {
-  background-color: #6d6d6d;
-  box-shadow: 1px 1px 6px lightgray;
-  border: 1px solid lightgray;
-  font-size: 28px;
-}
-
-/* EXTENDS = sacamos propiedades de otra clase,
-MIXIN (s/parametros) = funcion que guarda propiedades en un "mixin"
-MIXIN (c/parametros) = *EJEMPLO BAJO* */
-/* MIXIN (s/parametros) */
-/* EJEMPLO de MIXIN (c/parametros) */
-.box-container {
-  background-color: red;
-  display: flex;
-  position: absolute;
-}
-
+/* HEADER */
 header {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100px;
+  height: 10%;
 }
 
 header nav {
   width: 100%;
+  height: 100px;
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   align-items: center;
+  justify-content: space-around;
   padding: 20px 0;
   border-bottom: 1px solid #01463b;
-  box-shadow: 0px 0px 10px 0px #000000;
+  box-shadow: 0px 2px 10px 1px #000000;
 }
 
 header .img-logo {
   width: 100px;
-  height: 140px;
+  height: auto;
 }
 
 nav a {
@@ -181,17 +76,116 @@ nav a {
   padding: 15px 25px;
   font-size: 1.2em;
   transition: background-color 0.3s;
-  position: relative;
-  left: 20%;
 }
 
 nav a:hover {
-  background-color: #00917C;
+  background-color: #000000;
   color: #ffffff;
 }
 
-body {
+.botonMenu {
+  background-color: #ffffff;
+  color: white;
+}
+
+.botonMenu .navbar-toggler-icon {
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+}
+
+.img-logo-button {
+  position: absolute;
+  right: 0;
+}
+
+.navbar {
+  background-color: #000000;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar-collapse {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#variedad {
+  background-color: #F39C12;
+  border: none;
+
+}
+
+#barraNavegacion {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+  transform: translateY(-150%);
+}
+
+.navbar .container-fluid {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav li {
+  padding-left: 10px;
+  position: relative;
+  left: 50%;
+}
+
+.navbar-nav li a {
+  color: #022c25;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.navbar-nav li a:hover {
   background-color: #01463b;
+  color: white;
+}
+
+/* BODY */
+
+.mainIndex {
+  margin-top: 150px;
+}
+
+.boxy {
+  border-radius: 20px;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.61)), url(../img/wall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* CARD */
+
+.benefit {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3s ease-out, transform 0.6s ease-out;
+}
+
+.benefit.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caracterCafe {
+  opacity: .3;
+}
+
+.container-fluid {
+  border-radius: 20px !important;
 }
 
 .container-fluid .row img {
@@ -201,231 +195,98 @@ body {
 }
 
 .card .card-img-top {
-  width: 30%;
+  width: 100%;
+  height: auto;
 }
 
 .card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* VER CARTA */
+.contenedorDeCarta {
+  border-radius: 100px;
+  background-color: rgb(180, 255, 109);
+  width: 100px !important;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 150px;
+  padding: 0 !important;
+}
+
+.botonCarta {
+  padding: 0 !important;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.botonCarta:hover {
+  color: #000000;
+  background-color: transparent;
+}
+
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-}
-
-.btn {
-  background-color: #00917C;
-  border-radius: 0;
-  border: none;
-}
-
-.btn:hover {
-  background-color: #01463b;
-}
-
-.boxy {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.boxy2 {
-  text-transform: capitalize;
-  font-style: italic;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px black;
-}
-
-.p-1 {
-  padding: 10px;
-}
-
-.p-2 {
-  padding: 20px;
-}
-
-.p-3 {
-  padding: 30px;
-}
-
-.p-4 {
-  padding: 40px;
-}
-
-.p-5 {
-  padding: 50px;
-}
-
-/* TO = tiene en cuenta hasta el ante ultimo numero */
-/* THROUGH = tiene en cuenta todos los numeros */
-* {
-  font-family: "Archivo", sans-serif;
-  margin: 0;
-  padding: 0;
-  /*display: flex;*/
-}
-
-/*
-    main {
-      flex: 1;
-      padding: 0px;
-      text-align: center;
-    }
-
-
-    section {
-      padding: 20px;
-    }
-
-    h2 {
-      color: #433520;
-    }
-
-    p {
-      color: #025955;
-      font-size: 1.1em;
-    }
-
-    .prompt-btn {
-      background-color: #00917C;
-      color: #FDE8CD;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .prompt-btn:hover {
-      background-color: #025955;
-    }
-
-    .img-logo {
-      width: 250px;
-    }
-
-    .img-logo:hover {
-      transform: scale(1.1);
-      transition: .2s;
-      cursor: pointer;
-    }
-
-    main header {
-      background-image:linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.315)),    url(img/cafe-wallpaper-2.jpg);
-
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-attachment: fixed;
-      background-position-y: -250px;
-    }
-
-
-    .footer-cofi {
-      width: 100%;
-      height: 150px;
-      background-color: #00917C;
-    } */
-/*
-    #slider-container {
-      position: relative;
-      top: -20px;
-      overflow: hidden;
-    }
-
-    #slider {
-      display: flex;
-      animation: slide 10s infinite; /* Ajusta la duración según tus preferencias *
-
-  }
-
-    #slider img {
-      width: 100%;
-      height: auto;
-    }
-
-    @keyframes slide {
-      0% {
-        transform: translateX(0);
-      }
-      25% {
-        transform: translateX(-100%);
-      }
-      50% {
-        transform: translateX(-200%);
-      }
-      75% {
-        transform: translateX(-300%);
-      }
-      100% {
-        transform: translateX(0);
-      }
-
-      100% {
-          transform: translateX(0);
-        }
-        75% {
-          transform: translateX(-100%);
-        }
-        50% {
-          transform: translateX(-200%);
-        }
-        25% {
-          transform: translateX(-300%);
-        }
-        0% {
-          transform: translateX(0);
-        }
-    } */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #01463b;
-}
-
-.contenedorDeCarta {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 15px;
-  background-color: #e5ff50;
+  gap: 20px;
 }
 
 .card-body p {
   font-weight: bold;
 }
 
-.botonCarta {
-  width: 70%;
+.mainMerienda {
+  margin-top: 150px;
 }
 
-.nuestrasVariedades {
+.mainSucursales {
+  margin-top: 150px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000000;
   font-weight: bold;
   width: 100%;
-}
-
-.card-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-}
-
-.footer {
-  background-color: #01463b;
-  font-weight: bold;
-  padding: 20px 0;
+  height: 20%;
+  padding: 0;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.61)), url(../img/barista-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .footer-container {
-  background-image: url(../img/barista-wallpaper.jpg);
-  background-size: 100%;
-  background-position-y: -500PX;
-  max-width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container h4 {
+  border-bottom: 3px solid #01463b;
+}
+
+.segMitad {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 50%;
 }
 
 .contactoSection p {
@@ -433,19 +294,21 @@ body {
 }
 
 .footer-section {
-  margin: 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  padding-left: 20px;
 }
 
 .footer-section h4 {
-  color: #01463b;
+  color: #ffffff;
   margin-bottom: 10px;
+  padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .footer-section p {
-  color: black;
-  text-shadow: 2px 1px 5px #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .footer-section a {
@@ -471,13 +334,110 @@ body {
 }
 
 .footer-bottom {
-  border-top: 1px solid #7F8C8D;
+  border-top: 2px solid #01463b;
   margin-top: 20px;
   padding-top: 20px;
 }
 
 .footer-bottom p {
-  color: #BDC3C7;
+  color: #ffffff;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Estilos generales que se aplican a todas las pantallas */
+/* Por ejemplo, ajustar los márgenes y el padding */
+.boxy {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.boxy2 {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Reducir el tamaño del logo en el botón de navegación */
+  .img-logo-button, .img-logo {
+      width: 40px;
+  }
+
+  .mainSucursales {
+    margin-top: 100px;
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #variedad {
+      text-align: center; /* Centrar el botón */
+      margin-bottom: 1rem; /* Añadir margen inferior */
+  }
+
+  /* Ajustar tamaño de texto para dispositivos móviles */
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  #slider-container {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Ajustar tamaño de imágenes dentro de los contenedores */
+  .boxy img {
+      max-width: 100%; /* Asegurar que las imágenes no se desborden */
+      height: auto; /* Mantener la proporción original */
+  }
+}
+
+
+/* MEDIA QUERIES */
+/* 
+@media (min-width: 768px) {
+  .card-two {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  header nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    padding: 15px 50px;
+  }
+
+  .card-body {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav a {
+    padding: 15px 80px;
+    font-size: 1.5em;
+  }
+
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+} */
